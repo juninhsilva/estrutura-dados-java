@@ -2,10 +2,10 @@ package com.juninhsilva.dio.java.estruturasdedados.encadeamento;
 
 public class Encadeamento {
     public static void main(String[] args) {
-        No no1 = new No("Nó 1");
-        No no2 = new No("Nó 2");
-        No no3 = new No("Nó 3");
-        No no4 = new No("Nó 4");
+        No<String> no1 = new No<>("Nó 1");
+        No<String> no2 = new No<>("Nó 2");
+        No<String> no3 = new No<>("Nó 3");
+        No<String> no4 = new No<>("Nó 4");
 
         no1.setProximo(no2);
         no2.setProximo(no3);

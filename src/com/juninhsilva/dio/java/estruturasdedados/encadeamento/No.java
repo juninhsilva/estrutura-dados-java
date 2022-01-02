@@ -1,19 +1,19 @@
 package com.juninhsilva.dio.java.estruturasdedados.encadeamento;
 
-public class No {
-    private String conteudo;
-    private No proximo;
+public class No <T>{
+    private T conteudo;
+    private No<T> proximo;
 
-    public No(String conteudo){
+    public No(T conteudo){
         this.conteudo = conteudo;
         this.proximo = null;
     }
 
-    public No getProximo() {
+    public No<T> getProximo() {
         return proximo;
     }
 
-    public String getConteudo() {
+    public T getConteudo() {
         return conteudo;
     }
 
@@ -21,7 +21,7 @@ public class No {
         this.proximo = proximo;
     }
 
-    public void setConteudo(String conteudo) {
+    public void setConteudo(T conteudo) {
         this.conteudo = conteudo;
     }
 
